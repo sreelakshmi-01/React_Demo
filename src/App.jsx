@@ -1,8 +1,14 @@
 import ColorSchemesExample from "./components/navbar"
+import Sidebar from "./components/sidebar"
 
 function App() {
   return (
-    <ColorSchemesExample></ColorSchemesExample>
+    <div>
+      <ColorSchemesExample></ColorSchemesExample>
+      <Sidebar></Sidebar>
+      
+    </div>
+
   )
 }
 
