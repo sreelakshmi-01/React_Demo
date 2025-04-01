@@ -4,7 +4,7 @@ import Sidebar from "./components/sidebar"
 function App() {
   return (
     <div>
-      <ColorSchemesExample></ColorSchemesExample>
+      <ColorSchemesExample></ColorSchemesExample> 
       <Sidebar></Sidebar>
       
     </div>
