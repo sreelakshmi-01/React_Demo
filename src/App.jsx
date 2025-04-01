@@ -1,9 +1,8 @@
-
+import ColorSchemesExample from "./components/navbar"
 
 function App() {
-
   return (
-    <h1>Hi</h1>
+    <ColorSchemesExample></ColorSchemesExample>
   )
 }
 
