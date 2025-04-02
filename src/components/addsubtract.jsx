@@ -1,8 +1,21 @@
+import { useState } from "react";
+
 function AddSub() {
-    let name = "Gopika"
+    let [num,setNum] = useState(0)
+
+    const AddNum = ()=>{
+        setNum(num+1)
+    }
+
+    const SubNum = ()=>{
+        setNum(num-1)
+    }
+    
     return (
         <div>
-            <h1>Name: {name}</h1>
+            <h1>Num: {num}</h1>
+            <button onClick={AddNum} >Add</button>
+            <button onClick={SubNum}>Subtract</button>
         </div>
     )
 }

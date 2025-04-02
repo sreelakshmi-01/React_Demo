@@ -5,11 +5,15 @@ import AddSub from "./components/addsubtract"
 function App() {
   return (
     <div>
-      <ColorSchemesExample></ColorSchemesExample> 
-      <Sidebar></Sidebar>
-      <AddSub></AddSub>
+      <ColorSchemesExample></ColorSchemesExample>
+      <div className="d-flex">
+        <Sidebar />
+        <div className="ms-3">
+          <AddSub />
+        </div>
+      </div>
     </div>
-    
+
   )
 }
 
