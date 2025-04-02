@@ -14,7 +14,7 @@ function AddSub() {
     return (
         <div>
             <h1>Num: {num}</h1>
-            <button onClick={AddNum} >Add</button>
+            <button onClick={AddNum} style={{marginRight: "10px"}} >Add</button>
             <button onClick={SubNum}>Subtract</button>
         </div>
     )
