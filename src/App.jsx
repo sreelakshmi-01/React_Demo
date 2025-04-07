@@ -1,6 +1,3 @@
-import ColorSchemesExample from "./components/navbar"
-import Sidebar from "./components/sidebar"
-import Electronics from "./components/electronicsdata"
 import { Routes, Route } from "react-router-dom"
 
 function App() {
