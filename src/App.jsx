@@ -1,14 +1,20 @@
-import { Routes, Route } from "react-router-dom"
+import ColorSchemesExample from "./components/navbar"
+import Electronics from "./components/electronicsdata"
+import Sidebar from "./components/sidebar"
+import { Routes,Route } from "react-router-dom"
 
 function App() {
   return (
     <>
-      <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/add" element={<AddData />}></Route>
-        <Route path="/more/:id" element={<More />}></Route>
-        <Route path="/fetch" element={<FetchUsers />}></Route>
-      </Routes>
+    <ColorSchemesExample></ColorSchemesExample>
+    <div style={{display:'flex'}}>
+    <Sidebar></Sidebar>
+    <div style={{flex:'1',padding:'20px'}}>
+    <Routes>
+      <Route path="/" element={<Electronics/>}></Route>
+    </Routes>
+    </div>
+    </div>
     </>
   )
 }
