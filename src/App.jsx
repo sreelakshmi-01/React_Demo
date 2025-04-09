@@ -4,6 +4,7 @@ import Sidebar from "./components/sidebar"
 import { Routes, Route } from "react-router-dom"
 import ViewMore from "./components/viewmore"
 import Add from "./components/Add"
+import Update from "./components/update"
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             <Route path="/" element={<Electronics />}></Route>
             <Route path="more/:electronic_id" element={<ViewMore />}></Route>
             <Route path="/add" element={<Add />}></Route>
+            <Route path="/update/:electronics_id" element={<Update/>}></Route>
           </Routes>
         </div>
       </div>

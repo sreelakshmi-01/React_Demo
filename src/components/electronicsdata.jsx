@@ -30,6 +30,9 @@ function Electronics() {
                     <Link to={`more/${x.electronic_id}`}>
                         <button style={{ backgroundColor: '#04AA6D', color: 'white', padding: '5px', width: '100%' }}>View More</button>
                     </Link>
+                    <Link to={`update/${x.electronic_id}`}>
+                        <button style={{ backgroundColor: 'green', color: 'white', padding: '5px', width: '100%' }}>Update</button>
+                    </Link>
                 </Card>
             ))}
 

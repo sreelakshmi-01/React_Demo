@@ -41,6 +41,7 @@ function ViewMore() {
                     <ListGroup.Item>{data.price}</ListGroup.Item>
                 </ListGroup>
                 <button onClick={handleDelete} style={{ backgroundColor: 'red', color: 'white', padding: '5px' }}>Delete</button>
+                
             </Card>
         </div>
     )
