@@ -9,7 +9,9 @@ function Add() {
         "price": 0,
         "image": null
     })
+
     const navigate = useNavigate()
+
     const InputData = (e) => {
         let name = e.target.name;
         let value = e.target.value;
@@ -17,7 +19,9 @@ function Add() {
         console.log(name)
         console.log(value)
         console.log(files)
+
         let newData;
+
         if (files) {
             newData = { ...data, [name]: files[0] }
             setData(newData)
@@ -26,6 +30,7 @@ function Add() {
             setData(newData)
         }
     }
+
     const handleData = async () => {
         try {
             const response = await axios.post("http://127.0.0.1:8000/add", data, {
@@ -38,9 +43,11 @@ function Add() {
             console.log("There was an error", error)
         }
     }
+
     const submitData = () => {
         handleData()
     }
+
     return (
         <>
             <div style={{ maxWidth: "400px", margin: "auto" }}>
@@ -94,4 +101,5 @@ function Add() {
         </>
     )
 }
+
 export default Add;
